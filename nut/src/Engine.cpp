@@ -13,7 +13,9 @@ Engine::Engine() : model(nullptr), renderer(nullptr), shader(nullptr), window(nu
 }
 
 Engine::~Engine() {
-    // TODO: Clean-up code, if any
+    if (renderer) delete renderer;
+    if (shader) delete shader;
+    if (model) delete model;
 }
 
 void Engine::init() {
