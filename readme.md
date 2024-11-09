@@ -21,6 +21,7 @@ nut/
 ├── external/                # External libraries
 │   ├── glfw/                # GLFW library
 │   └── glad/                # GLAD library
+|   |__ etc..                # the rest of the dep.
 ├── src/                     # Source files
 │   ├── Shader.cpp           # Shader class implementation
 │   ├── Model.cpp            # Model class implementation
@@ -29,8 +30,9 @@ nut/
 ├── shaders/                 # Shader files
 │   ├── vertex_shader.glsl   # Vertex shader source
 │   └── fragment_shader.glsl # Fragment shader source
-├── CMakeLists.txt           # CMake build configuration
-└── main.cpp                 # Entry point for the application
+├── Makefile                 # CMake build configuration
+
+main.cpp                 # Entry point for the application
 ```
 
 ## Requirements
